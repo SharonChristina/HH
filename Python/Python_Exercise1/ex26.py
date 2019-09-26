@@ -3,6 +3,8 @@ that takes a list of numbers and returns the largest one. Then ask yourself:
 why define and call a new function, when I can just as well call the reduce() 
 function directly?"""
 
+from functools import reduce #for anaconda else 'reduce' not recognised.
+
 def max_in_list(lst):
   return reduce(lambda x, y: x if x > y else y, lst)
 
